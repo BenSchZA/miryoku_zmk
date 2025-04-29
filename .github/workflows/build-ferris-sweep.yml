@@ -1,0 +1,8 @@
+name: "Build Ferris Sweep"
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      shield: '["cradio_left","cradio_right"]'
